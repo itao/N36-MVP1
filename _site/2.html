@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{% include google_analytic.html %}
+		<!-- Google analytic -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37523341-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <!-- /Google analytic -->
 		
     	<meta charset="utf-8">
     	<title>The Next 36</title>
@@ -69,29 +82,41 @@
 
     	<div class="container-narrow">
 
-			{% include nav.html %}
+			<!-- Navigation bar -->
+<div class="masthead">
+	<ul class="nav nav-pills pull-right">
+		<!-- Button to trigger modal -->
+		<li class="active"><a href="#myModal" role="button" data-toggle="modal">Sign up</a></li>
+		<li><a href="mailto:ian_2013@thenext36.ca?subject=Hi Ian, Jarad, and Nikita!&cc=jarad_2013@thenext36.ca&cc=nikita_2013@thenext36.ca">Contact us</a></li>
+	</ul>
+	<h3 class="lead">The Next 36</h3>
+</div> <!-- Navigation bar ends -->
 
       		<hr>
 
-			{{ content }}
+			<div class="jumbotron">
+	<a href="3.html"><img src="assets/img/Slide02.png"></a>
+	<p class="lead">Traditionally..</p>
+	<p class="lead"><small>ministry expectations and learning outcomes are buried in hundreds of pages of text.</small></p>
+</div>
 			
 			<hr>
 			
 			<div class="pagination pagination-centered pagination-large">
 				<ul>
-					<li {% if page.number == 1 %} class="disabled" {% endif %}><a href={{ page.prev }}>Prev</a></li>
-			    	<li {% if page.number == 1 %} class="active" {% endif %}><a href="index.html">1</a></li>
-			    	<li {% if page.number == 2 %} class="active" {% endif %}><a href="2.html">2</a></li>
-			    	<li {% if page.number == 3 %} class="active" {% endif %}><a href="3.html">3</a></li>
-			    	<li {% if page.number == 4 %} class="active" {% endif %}><a href="4.html">4</a></li>
-					<li {% if page.number == 5 %} class="active" {% endif %}><a href="5.html">5</a></li>
-					<li {% if page.number == 6 %} class="active" {% endif %}><a href="6.html">6</a></li>
-					<li {% if page.number == 7 %} class="active" {% endif %}><a href="7.html">7</a></li>
-					<li {% if page.number == 8 %} class="active" {% endif %}><a href="8.html">8</a></li>
-					<li {% if page.number == 9 %} class="active" {% endif %}><a href="9.html">9</a></li>
-					<li {% if page.number == 10 %} class="active" {% endif %}><a href="10.html">10</a></li>
-					<li {% if page.number == 11 %} class="active" {% endif %}><a href="11.html">11</a></li>
-			    	<li {% if page.number == 11 %} class="disabled" {% endif %}><a href={{ page.next }}>Next</a></li>
+					<li ><a href=index.html>Prev</a></li>
+			    	<li ><a href="index.html">1</a></li>
+			    	<li  class="active" ><a href="2.html">2</a></li>
+			    	<li ><a href="3.html">3</a></li>
+			    	<li ><a href="4.html">4</a></li>
+					<li ><a href="5.html">5</a></li>
+					<li ><a href="6.html">6</a></li>
+					<li ><a href="7.html">7</a></li>
+					<li ><a href="8.html">8</a></li>
+					<li ><a href="9.html">9</a></li>
+					<li ><a href="10.html">10</a></li>
+					<li ><a href="11.html">11</a></li>
+			    	<li ><a href=3.html>Next</a></li>
 			  	</ul>
 			</div>
 			
